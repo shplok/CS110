@@ -1,0 +1,36 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<6>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<4>>>).
+
+   <<<3>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Mehdi               Classmate          generatewaltz.py brainstorming
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Generating the Waltz)
+      Approach: I began by making a 2D list called minuet measure that had 11 rows[i] and 16 columns[j]. I then made a nested for loop that accepted the first data table (standard input) into the [i][j] indicies for the minuet section. I then did the same thing for the trio data table and trio indicies with a 2D list called trio measure. I then wrote two "for" loops that would pick a random integer. For minuet, the sum of two dice rolls. For trio, just one. Then, for minuet, it would write in standard output the i value being the random iteger and the j value being the colum number. I did the same thing for trio with the exception of having one die instead of two. then after they wrote all of the values followed by a space, I had printed the correct values with the correct syntax. 
+
+      Issues and resolution: I was having trouble consolidating the printing and random selection into the original loops that wrote the 2D lists. The way I worked around this was just by creating two other for loops that would handle the actual logging and writing of the values.
+
+   Problem 2 (Playing the Waltz)
+      Approach: I first started out by creating a variable called waltzMeasure, and setting it equal to standart input read all ints. This is so that when generatewaltz.py is ran, all of the values from the output are accepted into this new list. After that, it was just a bit of error handling, making sure that the length was 32 for 32 measures. I also made sure that the value picked at random was inside the scope of the two data tables. After that, I wrote the code to play the waltz, making a variable called minuetPlay and playing the files related to minuet (data/M_) _ = file number. I then did the exact same thing for trio with T instead.
+
+      Issues and resolution: I didn't really encounter any issues when approaching this problem, I did overthink it at the beginning but after a little bit of thinking and writing, I was able to get to the solution, no problem.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This project was really enjoyable, I find it really interesting when the programs work into the next one in the project.

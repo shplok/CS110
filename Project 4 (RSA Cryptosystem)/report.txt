@@ -1,0 +1,58 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<7>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Mahdi               classmate       brainstorming
+  
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (RSA Library)
+      Approach: 
+I began by reading through the API and determining what function I should define first. In doing so, I determined that _primes would be the best one to start with. 
+
+I created a list called primelist and wrote nested for loops with if statements in each defining and checking the conditions of the number set. I then added the number(if it was a prime) to the list that I defined first and then returned that list. after _primes, I tackled _choice followed by _sample. _choice and _sample were simple enough. 
+
+for _choice, I set a variable to a random character in the scope of 0 and the length of list a. Then, I treutned the rth value in the list a. 
+
+For _sample, I began by writing a simple for loop that made a copy of the list a. I then had a second for loop that handled the shuffling and iteration of k values over b.
+
+After _sample, I did the encrypt and decrypt functions. These were easy as I was just copying the command listed.
+
+They keygen problem was a bit more difficult. I was able to sail smoothly through the picking of primes, calculating the p and q value as well as the m and n values. When I got to the while loop, I was unable to dertermine what I was doing wrong. I had realized that I was using a for loop and a while loop would be far more intuitive to go about. I then finished the problem without much difficulty at all.
+
+      Issues and resolution: Just having some difficulty approaching the keygen problem, but after a while of brainstorming and sitting with my thoughts and I was able to come to a conclusion without too much grief. Other than that, I did not encounter any issues on this problem.
+
+   Problem 2 (Keygen Program)
+      Approach: I began by accepting lo and hi as integer command line arguments. I then created a variable with the name key that would do an rsa.keygen call for the values from lo to hi. I then wrote the values of keygen[0 - 3] as strings separated by spaces in order to create the key. 
+
+      Issues and resolution: I did not encounter any issues when approaching this problem.
+
+   Problem 3 (Encryption Program)
+      Approach: I began by accepting n and e as command-line inputs. After that, I set the width to the bitlength by calling rsa.bitlength and setting message to a list reading all characters. I then turned "c" into integer and encrypted it. I then wrote the binary to decimal form of the encrypted value.  
+
+      Issues and resolution: I did not encounter any issues when approaching this problem. 
+
+   Problem 4 (Decryption Program)
+      Approach: I began by accpeting n and d (integers) as command line arguments. I created a value width and et it equal to the bit length of n. I then set a variable with the name message to a list of all characters. I then wrote a for loop ranging from 0 to length of message - 1, incremented by width. I then set s equal to
+
+      Issues and resolution: I had some trouble going about the decryption function action for about half an hour until I had realized that I had forgotten to return the actual decrypted variable and just had it set to calculate the actual variable. Once I had that sorted out, things were pretty okay, other than the fact that gradescope was all over the place for a bit.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   RSA is such an interesting topic to me, I really enjoy the concept and can directly see how this project will aid in my future career aspirations. This one was very fun to work through.

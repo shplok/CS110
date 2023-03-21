@@ -1,0 +1,80 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<5>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   No help recieved
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Wind Chill)
+      Approach: I started off by looking at my code for the winchill problem from project 1. I had a feeling that the code would be pretty similar to the code that I wrote earlier. I ended up using the same variables and formula for calculation. Then I wrote the code to make sure that if the specified "t"value was greater than 50, there would be a output that would pop up that says that "t" must be less than 50. I then did the same thing for the value of v for being greater than 3. I then finished it by writing w - windchill in standard output.
+
+      Issues and resolution: I did not encounter any issues on this problem.
+
+   Problem 2 (Day of the Week)
+      Approach: I first accepted m d y as integer values symbolizing the month, day, and year. after that, I added the calculations to determine the day of the week, notated as dow. After that, I assigned each dow number to a day corresponding to the correct weekday name. Then, I wrote dow in standard output.
+
+      Issues and resolution: I did not encounter any issues on this problem.
+
+   Problem 3 (Playing Card)
+      Approach: first I determined a random number for rank and suit, rank being random from [2, 14] and suit being random from [1, 4]. Then, for the rank, I set rankStr equal to " " so that there was an empty space to work with. When picking a random number 2 - 14, the empty space is then filled with the character assinged to its respected number value. The same goes for suit. I then finally wrote rankStr of suitStr in standard output.
+
+      Issues and resolution: I did not encounter any issues on this problem.
+
+   Problem 4 (Root Finding)
+      Approach: I first started by assigning values to k, c, and, EPSILON, also making our guess (t) equal to c. I then added the formula for calculating the kth root of c up to epsilon decimal places and wrote that in standard output followed by a newline character.
+
+      Issues and resolution: I did not encounter any issues on this problem.
+
+   Problem 5 (Greatest Common Divisor)
+      Approach: I first started by accepting p and q as system arguments (int) and then w as a temporary value. I then used modulo to determine that if the remainder of p/q is not 0, then i switched the values and wrote the remainder of the new w/q and then wrote "q" in standard output.
+
+      Issues and resolution: I did not encounter any issues on this problem
+
+   Problem 6 (Fibonacci Number)
+      Approach: I began by accepting n as a command line input and then assigned values to a,b,c,and i. a and b both equal to 1 and c as the temporary value to switch. i then represents 3 for the fibonacci sequence. I then wrote the formula to determine the number for where i is less than or equal to n. I then wrote b in standard output.
+
+      Issues and resolution: I did not encounter any issues when attempting this problem.
+
+   Problem 7 (Sum of Powers)
+      Approach: I accepted n and k as system arguments and then set total equal to 0. After that I used the function, "for i in range(1, n+1): doing n + 1 since it isnt inclusive. I then wrote total += i**k and wrote total in standard output.
+
+      Issues and resolution: I did not encounter any issues when working on this problem.
+
+   Problem 8 (Dragon Curve)
+      Approach: I began by accepting n as an integer in a system argument. I then next set dragon and nogard equal to the string "F". I then set the store value equal to 0. I then used the for i in range function with a minimum of 1 and a maximum of n (n+1). I then switched the values and wrote dragon in standard output. 
+
+      Issues and resolution: I had some trouble switching dragon and nogard and writing L and R as well. I then realized that I had the values switched around and then I was able to figure it out after moving them around a bit. 
+
+   Problem 9 (Perfect Numbers)
+      Approach: I first started by importing n as an integer in command-line input. Then for i in the range [2,n], I would check to see if the remainder of i/j was zero. If so, then the total is incimented by j until total is equal to i. after this is the case, total is written in standard output. 
+      Issues and resolution: I think at first, I forgot to add the second = sign to if total == 0 and so i kept getting no output because there was no way it could be zero. After I did a little bit of digging, I was able to figure out what the issue was and solve it.
+
+   Problem 10 (Ramanujan Numbers)
+      Approach: First I accepted n as an int input and set a equal to 1. for the first while loop, if a^3 is less than or euqal to n, then b = a+1 and so on and so forth, following the same rule for each variable given the formulas. After following all of the formulas, then I checked if x == y, x being the formula for a^3 + b^
+and y being the formula c^3 + d^3
+
+If this equation is true, then the variables are written in standard output.
+
+      Issues and resolution: I don't even know where to start, I had so much trouble with the nested while loops and trying to get all the values to equal what they needed to. I also had a bit of trouble with getting the strings of the numbers to write correctly for gradescope. After a lot of trial and error, around 2 hours of such, I was able to get the program to do what I wanted it to.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This project was fun but Ramanujan numbers made my hair fall out
+
+Thank you!

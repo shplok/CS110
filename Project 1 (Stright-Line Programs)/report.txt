@@ -1,0 +1,76 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<6>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Did you receive help from anyone? List their names, status (classmate,
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   No help received. 
+
+4. Provide a short description of how you approached each problem, issues you
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Day of the Week)
+      Approach: I began by first accepting each integer as a command-line argument and then brainstormed a bit on how I would approach the equation. I then labled the variables accordingly and added the equation. Finally, I wrote the day of the week followed by a newline character. 
+
+      Issues and resolution: I did not encounter any issues.
+
+   Problem 2 (Mercator Projection)
+      Approach: First, I accepted the two float values as command-line arguments for latitude and longitude. I then converted latitude to radians and named it lat1. After that, I completed the equations and wrote out longitude, latitude followed by a newline character. 
+
+      Issues and resolution: For the life of me, I could not figure out the equation notation and I feel like I was completely overthinking it, I was getting different results each time I tried to reformat it but I could still not get the answer I wanted. After a while, I was able to transfer the latitude to radians in a way that I felt would be suffiecient and then ran the program. I was so relieved to see that It all worked out.
+
+   Problem 3 (Great Circle Distance)
+      Approach: I began by accepting the x and y values as command-line inputs. I then converted all of the values to radians. After that, I implimented the equation to calculate distance, putting the variables in the equation and then wrote d being distance followed by a newline character.
+
+      Issues and resolution: At first I forgot to convert them all to radians but after a little bit of troubleshooting, I was able to locate my issue.
+
+   Problem 4 (Wind Chill)
+      Approach: I first accepted t and v float values as command-line arguments. I then added the equation to calculate windchill with the proper locations for the variables. Then I wrote the windchill ("w") followed by a newline character.
+
+      Issues and resolution: I did not encounter any issues.
+
+   Problem 5 (Gravitational Force)
+      Approach: I first accepted the float values of m1, m2, and r: representing the masses of each object and the distance from their respected centers. I then wrote the equation for gravity followed by the equation for gravitational force. I finished that with a statement writing the gravitational force with a newline character at the end.
+
+      Issues and resolution: At first, I couldn't understand why my equation for gravitational force wasn't working, but then I realized I hadn't actually assigned the vairable "G" to anything. After a quick fix, I figured it out.
+
+   Problem 6 (Snell's Law)
+      Approach: I first began by accepting the inputs as command line arguments. Next, I converted theta into radians and made the equation for sin of theta2. finally, I converted theta2 into degrees and wrote in standard output followed by a newline character
+
+      Issues and resolution: This one was a bit of a doozy for me. I had a lot of trouble figuring out the exact equation to calculate the value of theta2
+
+   Problem 7 (Gambler's Ruin)
+      Approach: I began by accepting n1 and n2 as the ammount of pennies. Next I accepted the value of p (probability), all three as command-line arguments. After that, I calculated q as 1-p in order to determine the other value for player 2. After that, I wrote down the equations for both player 1 and player 2 followed by "p1 p2" values written in standard output followed by a newline character
+
+      Issues and resolution: I was also having a good bit of trouble notating the equation for the probability of winning on this one.
+
+   Problem 8 (Waiting Time)
+      Approach: I first imported the two floats as command-line arguments. I then wrote the simple equation to calculate probability. After that, I wrote the probability followed by a newline character. 
+
+      Issues and resolution: I did not encounter any issues.
+
+   Problem 9 (Die Roll)
+      Approach: I accepted the n int as a command-line argument (n being sides of the die). I then wrote two stdradom equations for the die roll d1 and d2 represent the first and second die with the lowest receiving 1 for the roll and highest being n+1 not inclusive. I then wrote the result as d1+d2 followed by a newline character. 
+
+      Issues and resolution: I did not encounter any issues.
+
+   Problem 10 (Three Sort)
+      Approach: I first accepted x,y,and z as command-line arguments. Next, I assigned a min() to determine the minimum of the three numbers. I then did the same for the maximum. To determine the median, I wrote all of the numbers added up minus the minimum plus the maximum. I then wrote out all of the statements going from least to greatest.
+
+      Issues and resolution: I did not encounter any issues.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I really felt accomplished and I really enjoyed the project. 

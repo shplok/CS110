@@ -1,0 +1,47 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+
+   <<<10>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<4.25>>>
+
+3. Did you receive help from anyone? List their names, status (classmate, 
+   CS110 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Prabin Sharma          TA          assistance in looking over code
+
+4. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Particle Representation)
+      Approach: I first began by reading over the project a coupele of times, though very interesting, I feel as if some of the information was a little convoluted and a little bit confusing to understand at first glance. Regardless, I started off by defining the __init__ method in the Blob data set. I set all of the points x, y equal to 0.0 and set pixels (number of pixels equal to 0.) I then looked through and determined that I could easily approach the mass method and so tackled that next. All I did was just return the number of pixels in the blob when called which makes up the mass. This was quite straightforward. Next, I worked on the distanceTo method. This one was pretty self explanatory as all you have to do is impliment the distance formula d = sqrt(x-x1)^2 + (y-y1)^2. After completing this, I attempted to return a meaningful string when str is called on blob type object. I settled for the number of pixels (mass) and then in (), I implimented the x and y values to denote where the blob is in space. Finally, I completed the add method which essentially adds a pixel given the orderd pair and adds it to the specific blob. In doing this, I worked through the equation that would give me such a blob and then incrimented the pixel size by 1, effectively making the mass larger.
+
+      Issues and resolution: I did not encounter any issues when attempting this problem, though I was a bit slow on it.
+
+   Problem 2 (Particle Identification)
+      Approach: I began  this problem by defining the init method of BlobFinder. All I did was create a simpole list called self._blobs that would be created when the constructor is called. I then created a 2D list of booleans called marked that have the same dimensions as pic, which is one of the spicifiers given when accessing the function. I then implimented 2 nested for loops in order to append the blob to the list. I created a Blob object with the name blob, called the self._findBlob with the specifications and then added the blob to self._blobs if it had a mass that was greater than zero. After this, I began work on the getBeads method. I began by creating an empty list and named it beads. after that I used a for loop for each iteration in self.blobs. Within that I concluded that if the blob mass is greater than or equal to the pixels that were given when called upon the method, then the beads list appends the blob. Then I returned the bead list. After that, I worked on the _findBlob method. Essentially, this method identifies a blob using a search that utilizes depth (using the picture, luminance threshold, pixel column, pixel row, the marked matrix from before, and the blob being identified.)
+The meat and potatoes of this method can be summed up in the begnning mostly. I defined a base case for the method (return if pixel (i, j) is out of bounds, or if it is marked, or if its luminance is less than the luminance threshold.) If this is this case, the pixel at the specified index is changed from False to True. After that, I add the pixel to the blob. Finally, I have a recrusive call on the N, E, W, S pixels.
+
+      Issues and resolution: I had a bit of trouble going about the recursive calls on the pixels because I was trying to use a loop but I could get the same thing done by just specifying each equation. This is okay since I only need to do it 4 times per blob.
+
+   Problem 3 (Particle Tracking)
+      Approach: I began this problem by accepting pixels(int), tau(float), delta(float), and frames all as system arguments. I then created a variable named "bf" for blob finder. I called the Picture constructor and set the parameters to the 0th iteration of frames and tau. I then created a variable called prevBeads and set ot equal to a get beads function with pixels as the paremeter. After that I used 3 nested for loops to write the displacement of beads from one fram to another. For each bead in the current frame, the previous bead is then identified. If the previous bead is in the radius, then the distance between the two is written to standard output and the loop continues until it is exhausted. 
+
+      Issues and resolution: I had a lot of trouble managing the for loops and was quite lost in the beginning. After talking to prabin about the problem, I was able to narrow down my errors and complete the problem as hoped.
+
+   Problem 4 (Data Analysis)
+      Approach: This problem was majority reading instead of really much writing of code. I set variables ETA, RHO, T, R, METERS_PER_PIXEL, and displacements to the viscosity of water, radius of a bead, temperature in kelvin, the universal gas constantm and the actual displacements respectively. I then implimented the lambda function to determine the sum of the squares of the n displacements. After that, I computed the Boltzmann constant and avogadros constant and wrote them to standard output.
+
+      Issues and resolution: I had a tiny bit of trouble working on the divisor of the var problem but I was able to solve it relatively easily with a bit of trial and error.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   This was a fun project, I said it a bit before but I just felt some of the word problems were a little convoluted and there was a lot of throw away information that wasn't needed and really slowed down the process. Other than that, I had a good time working on it.
